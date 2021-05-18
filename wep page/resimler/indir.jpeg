@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <title>Pseudocode (Sözde Kod) | Barış Çelik</title>
+
+  
+  <meta name="description" content="Psuedocode (Sözde Kod), bir algoritma ya da programın akışı tarif eden, kısa ve öz açıklamalardan ibârettir."/>
+  
+  <meta name="keywords" content="psuedocode, algoritmalar, akış diyagramı"/>
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#065D77">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#065D77">
+  <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css?family=Karma|PT+Sans+Narrow:700&display=swap&subset=latin-ext" rel="preload" as="style" onload="this.onload=null; this.rel='stylesheet';">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css?family=Karma|PT+Sans+Narrow:700&display=swap&subset=latin-ext" rel="stylesheet" type="text/css">
+  </noscript>
+  <link href="/assets/css/style.css" rel="stylesheet" type="text/css" media="all">
+
+  
+    <link rel="amphtml" href="https://www.bariscelik.com/_amp/psuedocode-akis-diyagramlari">
+  
+
+</head>
+
+<body class="">
+  <aside id="sidebar">
+    <!--<div class="searchbox">
+    <form method="get" action="/arama">
+        <input type="search" name="query" placeholder="GENERAL.SEARCH" />
+    </form>
+    </div>-->
+    <header role="banner">
+      <span class="page-title">Barış Çelik</span>
+      <p>Araştırmalar, Yazılar</p>
+    </header>
+    <div id="social-buttons">
+      <a href="/feed.xml" class="rssBtn smGlobalBtn" aria-label="RSS Akışı">
+        <span>RSS</span>
+      </a>
+      <a class="emailBtn smGlobalBtn" href="mailto:bariscelikweb@gmail.com" aria-label="Eposta Adresi">
+        <span>Eposta</span>
+      </a>
+      <a class="githubBtn smGlobalBtn" href="https://www.github.com/bariscelik/" aria-label="Barış Çelik Github Hesabı">
+        <span>GitHub</span>
+      </a>
+      <a class="linkedinBtn smGlobalBtn" href="https://www.linkedin.com/in/barış-çelik/" aria-label="Barış Çelik LinkedIN Hesabı">
+        <span>LinkedIn</span>
+      </a>
+    </div>
+  </aside>
+
+  <div id="content">
+    <main>
+      <nav role="navigation" id="main-nav">
+    <ul>
+        
+            <li>
+                <a href="/">✎ YAZILAR</a>
+            </li>
+        
+            <li>
+                <a href="/hakkinda">♞ HAKKINDA</a>
+            </li>
+        
+            <li>
+                <a href="/kategoriler"># KATEGORİLER</a>
+            </li>
+        
+            <li>
+                <a href="/sozluk">★ SÖZLÜK</a>
+            </li>
+        
+            <li>
+                <a href="mailto:bariscelikweb@gmail.com">@ EPOSTA</a>
+            </li>
+        
+            <li>
+                <a href="javascript:void(0);"  id="change-colorset" ><span class="icon-sun"></span></a>
+            </li>
+        
+            <li  class="hide-mobile" >
+                <a href="javascript:void(0);"  id="change-layout" ><span class="icon-eye"></span></a>
+            </li>
+        
+    </ul>
+</nav>
+      <div class="entry article" id="main-entity" itemprop="mainEntity" itemscope itemtype="https://schema.org/BlogPosting">
+	<header class="entry-header">
+		<h1 itemprop="name headline">Pseudocode (Sözde Kod)</h1>
+
+		<link itemprop="mainEntityOfPage" href="https://www.bariscelik.com/psuedocode-akis-diyagramlari/" />
+		<link itemprop="url" href="https://www.bariscelik.com/psuedocode-akis-diyagramlari/">
+		<span class="entry-time">
+			
+			<a href="/kategoriler/#Yazılım" itemprop="keywords">Yazılım</a>
+			
+			<a href="/kategoriler/#Algoritma" itemprop="keywords">Algoritma</a>
+			 | <time datetime="2017-09-10"
+				itemprop="datePublished">10 Eylül 2017</time> <span class="print-only"> |
+				Barış Çelik&lt;bariscelikweb@gmail.com&gt;</span>
+				<div id="tools">
+					<span class="tool-button">
+						<a href="#main-nav" class="scroll-top" aria-label="Tam Ekran Oku" title="Tam Ekran Aç/Kapa"><span class="icon-circle-up"></span></a>
+					</span>
+					<span class="tool-button">
+						<a onclick="fsToggle(this);" aria-label="Tam Ekran Oku" title="Tam Ekran Aç/Kapa"><span class="icon-enlarge"></span></a>
+					</span>
+					<span class="tool-button">
+						<a onclick="tocToggle(this);" aria-label="İçindekileri Aç/Kapat" title="İçindekileri Aç/Kapat"><span class="icon-file-text"></span></a>
+					</span>
+				</div>
+		</span>
+
+		<meta itemprop="dateModified" content="2017-09-10">
+		<span style="display:none" itemprop="author">
+			<span itemscope itemtype="http://schema.org/Person">
+
+				<span itemprop="givenName">
+					Barış
+				</span>
+				<span itemprop="familyName">
+					Çelik
+				</span>,
+			</span>
+		</span>
+		<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+            <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+              <meta itemprop="url" content="https://www.bariscelik.com/favicon-96x96.png">
+            </div>
+            <meta itemprop="name" content="Barış Çelik">
+        </div>
+		<meta itemprop="image" content="https://www.bariscelik.com/assets/img/pseudocode.jpg">
+	</header>
+	<div class="entry-content" itemprop="description">
+
+	<section id="toc" class="hidden">
+		<h3>İçindekiler</h3>
+		<div>
+			<ul class="section-nav">
+</ul>
+		</div>
+	</section>
+		
+<!--more-->
+
+<p>Pseudocode’un kendine has bir söz dizimi yoktur. Farklı biçimlerde pseudocode yazılabilir.</p>
+
+<p>Projelerimde kullandığım biçimi C diline benzer hâlidir. Örnek olarak;</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="n">function</span> <span class="n">oddNumber</span> <span class="p">{</span>
+  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">set</span> <span class="n">odd_number</span> <span class="n">to</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="n">If</span> <span class="n">remaining</span> <span class="n">the</span> <span class="n">division</span> <span class="n">by</span> <span class="mi">2</span> <span class="n">of</span> <span class="n">i</span> <span class="n">equals</span> <span class="n">to</span> <span class="mi">1</span>
+      <span class="n">print</span> <span class="s">"Odd Number"</span><span class="p">;</span>
+      <span class="n">set</span> <span class="n">odd_number</span> <span class="n">to</span> <span class="nb">true</span><span class="p">;</span>
+    <span class="n">print</span> <span class="n">a</span> <span class="n">newline</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>“Eğer yürüdüğünüz yolda güçlük ve engel yoksa, bilin ki o yol sizi bir yere ulaştırmaz.”
+ (<strong>Bernard SHAW</strong>)</p>
+</blockquote>
+
+	</div>
+	<div id="disqus_thread"></div>
+	
+	</div>
+	<div id="disqus_loader">
+		<script>
+			var disqus_loaded = false;
+
+			function load_disqus() {
+				disqus_loaded = true;
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = "https://bariscelik.disqus.com/embed.js";
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+				var ldr = document.getElementById('disqus_loader');
+				ldr.parentNode.removeChild(ldr);
+			}
+
+		</script>
+	</div>
+
+	<noscript>Yorumları görebilmek için javascript aktif olmalıdır.</noscript>
+	<div class="hdialog" id="dialog">
+		<h3 class="htitle"></h3>
+		<div class="htext"></div>
+	</div>
+	<script>
+			/*****************************/
+			/**** GLOBAL DECLARATIONS ****/
+			/*****************************/
+			var tools = document.getElementById("tools");
+			var toc   = document.getElementById("toc");
+
+
+			/***********************/
+			/**** TOOL BUTTONS ****/
+			/***********************/
+			var onTools = false;
+			var timeoutHandle;
+
+			window.onscroll = function()
+			{
+				window.clearTimeout(timeoutHandle);
+				tools.style.marginRight = "10px";
+				
+				timeoutHandle = setTimeout(function () {
+					if(!showToc && !onTools)
+						tools.style.marginRight = "-20%";
+				}, 1000);
+
+
+				// discuss loader
+				if ((window.innerHeight + window.scrollY) >= document.getElementById("main-entity").offsetHeight) {
+					if (disqus_loaded == false) { load_disqus() };
+				}
+			}
+
+			document.getElementById("main-entity").onscroll = function()
+			{
+				window.clearTimeout(timeoutHandle);
+				tools.style.marginRight = "10px";
+				
+				timeoutHandle = setTimeout(function () {
+					if(!showToc && !onTools)
+						tools.style.marginRight = "-20%";
+				}, 1000);
+			}
+
+			tools.onmouseenter = function(){
+				onTools = true;
+			};
+			
+			tools.onmouseleave = function(){
+				onTools = false;
+				if(!showToc)
+					tools.style.marginRight = "-20%";
+			};
+
+			/****************************/
+			/**** FULL SCREEN BUTTON ****/
+			/****************************/
+			var fsMode = false;
+
+			function fsToggle(th) {
+				var e = document.getElementById("main-entity");
+				
+				if (!fsMode) {
+					th.innerHtml = "Tam Ekran'dan Çık";
+					if (e.requestFullscreen) {
+						e.requestFullscreen();
+					} else if (e.mozRequestFullScreen) { /* Firefox */
+						e.mozRequestFullScreen();
+					} else if (e.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+						e.webkitRequestFullscreen();
+					} else if (e.msRequestFullscreen) { /* IE/Edge */
+						e.msRequestFullscreen();
+					}
+				} else {
+					th.innerHtml = "Tam Ekran";
+					document.exitFullscreen();
+				}
+			}
+
+			document.onfullscreenchange = function ( event ) { 
+				fsMode = !fsMode;
+			}; 
+
+			/***************************/
+			/**** TOGGLE TOC BUTTON ****/
+			/***************************/
+			var showToc = false;
+
+			function tocToggle(th) {
+				
+				showToc = !showToc;
+				if(showToc)
+				{
+					toc.className = "visible";
+					th.parentElement.className = 'tool-button active';
+				}
+				else{
+					toc.className = "hidden";
+					th.parentElement.className = 'tool-button';
+				}
+			}
+
+			/**********************/
+			/**** HOVER DIALOG ****/
+			/**********************/
+			const hLinks = document.querySelectorAll('[data-description]');
+			const hVOffset = 5;
+			const hHOffset = 20;
+			var hTimeout = 500;
+			var onDialog = false;
+			const hDialog = document.getElementById('dialog');
+
+			for (var i = 0; i < hLinks.length; i++) {
+				hLinks[i].onmouseenter = function () {
+					var hTop, hLeft;
+					var overWidth = (hDialog.parentElement.clientWidth - this.offsetLeft - 450);
+
+					if (overWidth < 0)
+						hLeft = (this.offsetLeft + overWidth - hHOffset) + "px"
+					else
+						hLeft = this.offsetLeft + "px"
+
+
+					hDialog.style.top = Math.ceil(this.offsetTop + this.offsetHeight + hVOffset) + "px";
+					hDialog.style.left = parseInt(hLeft) < 0 ? "0px" : hLeft;
+					hDialog.style.visibility = 'visible';
+					hDialog.style.opacity = 1.0;
+					document.getElementsByClassName('htitle')[0].innerHTML = this.innerHTML;
+					document.getElementsByClassName('htext')[0].innerHTML = this.getAttribute('data-description');
+					onDialog = true;
+				};
+				hLinks[i].onmouseleave = function () {
+					setTimeout(function () {
+						if (!onDialog) {
+							hDialog.style.visibility = 'hidden';
+							hDialog.style.opacity = 0;
+						}
+					}, hTimeout);
+					onDialog = false;
+				};
+			}
+
+			hDialog.onmouseenter = function () { onDialog = true; };
+			hDialog.onmouseleave = function () {
+				setTimeout(function () {
+					if (!onDialog) {
+						hDialog.style.visibility = 'hidden';
+						hDialog.style.opacity = 0;
+					}
+				}, hTimeout);
+				onDialog = false;
+			};
+
+	</script>
+</div>
+    </main>
+  </div>
+
+
+<!-- Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-73304919-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-73304919-1');
+</script>
+<!-- End Google Analytics -->
+
+<script>
+    (function(window, document) {
+        if ((window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) || window.localStorage.getItem('theme') === "dark")
+         {
+          if(window.localStorage.getItem('theme') !== "light"){
+            document.documentElement.classList.add('dark');
+            document.getElementById('change-colorset').children[0].classList.replace('icon-sun', 'icon-moon-fill');
+          }
+        }
+
+        if ( window.localStorage.getItem('layout') === 'boxed') {
+            document.documentElement.classList.add('boxed');
+            document.getElementById('change-layout').children[0].classList.replace('icon-eye', 'icon-sidebar');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const layoutBtn = document.getElementById('change-layout');
+            layoutBtn.addEventListener('click', () => {
+              const wasFull = document.documentElement.classList.toggle('boxed');
+              const layout = wasFull ? 'boxed' : 'full';
+                window.localStorage.setItem('layout', layout);
+
+                var iconLayout = layoutBtn.children;
+                if (wasFull)
+                  iconLayout[0].classList.replace('icon-eye', 'icon-sidebar');
+                else
+                  iconLayout[0].classList.replace('icon-sidebar', 'icon-eye');
+            });
+
+            const toggleButton = document.getElementById('change-colorset');
+            toggleButton && toggleButton.addEventListener('click', () => {
+                const wasLight = document.documentElement.classList.toggle('dark');
+                const theme = wasLight ? 'dark' : 'light';
+                window.localStorage.setItem('theme', theme);
+				
+				var icon = toggleButton.children;
+				if (wasLight)
+					icon[0].classList.replace('icon-sun', 'icon-moon-fill');
+				else
+					icon[0].classList.replace('icon-moon-fill', 'icon-sun');
+          
+            });
+
+
+        });
+    })(window, document);
+    </script>
+
+</body>
+</html>
